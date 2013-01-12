@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingLeft="100dp"
+    android:paddingRight="100dp" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="474dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.19"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/contacts"
+            android:layout_width="128dip"
+            android:layout_height="128dip"
+            android:background="@drawable/contacts" />
+
+        <Button
+            android:id="@+id/setting"
+            android:layout_width="128dip"
+            android:layout_height="128dip"
+            android:layout_toRightOf="@+id/contacts"
+            android:background="@drawable/settings" />
+
+        <Button
+            android:id="@+id/help"
+            android:layout_width="128dip"
+            android:layout_height="128dip"
+            android:layout_below="@+id/contacts"
+            android:background="@drawable/help" />
+
+        <Button
+            android:id="@+id/info"
+            android:layout_width="128dip"
+            android:layout_height="128dip"
+            android:layout_below="@+id/setting"
+            android:layout_toRightOf="@+id/help"
+            android:background="@drawable/info" />
+
+        <ToggleButton
+            android:id="@+id/onoff"
+            android:layout_width="128dip"
+            android:layout_height="128dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@+id/info"
+            android:layout_below="@+id/help"
+            android:background="@drawable/onoff"
+            android:text="ToggleButton"
+            android:textColor="@android:color/white" 
+            android:textOff="Tap to initiate tracking."
+            android:textOn="Tracking on! Press power button 3 times to initiate notification any time." />
+    </RelativeLayout>
+</LinearLayout>
+
+</LinearLayout>

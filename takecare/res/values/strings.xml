@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Take Care!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="username">username</string>
+    <string name="usummary">Enter Username</string>
+    <string name="pkey">password</string>
+    <string name="password">password</string>
+    <string name="dpassword">Please enter the password</string>
+    <string name="ukey">ukey</string>
+    <string name="skey">skey</string>
+    <string name="server">server</string>
+    <string name="sdescription">Server address</string>
+    <color name="orange">#FFA500</color>
+    
+    <string name="kname">kname</string>
+    <string name="name">Name</string>
+    <string name="nsummary">Enter your nick name</string>
+    
+    <string name="kphone">kphone</string>
+    <string name="phone">Phone</string>
+    <string name="psummary">Enter mobile number of this device</string>
+    
+    <string name="kclick">name</string>
+    <string name="click">Power Button Clicks</string>
+    <string name="csummary">Pressing power button these many time will initiate tracking</string>
+    
+    <string name="klocation">klocation</string>
+    <string name="location">Enable Location</string>
+    <string name="lsummary">You must enable either Mobile Network or GPS for tracking. GPS is always better!</string>
+</resources>

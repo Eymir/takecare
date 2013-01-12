@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="App Settings" >
+        <EditTextPreference
+            android:key="@string/kname"
+            android:summary="@string/nsummary"
+            android:title="@string/name" />
+        <EditTextPreference
+            android:key="@string/kphone"
+            android:summary="@string/psummary"
+            android:title="@string/phone" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Location Settings" >
+        <Preference android:key="@string/klocation" android:title="@string/location" android:summary="@string/lsummary">
+           <intent android:action="android.settings.LOCATION_SOURCE_SETTINGS"></intent>
+            
+            
+        </Preference>
+		</PreferenceCategory>
+
+</PreferenceScreen>
