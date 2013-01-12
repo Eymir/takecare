@@ -2,6 +2,8 @@ package com.masthaka.takecare;
 
 import android.app.Application;
 import android.content.Context;
+import android.location.Location;
+import android.os.Message;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -9,6 +11,15 @@ public class ImhApplication extends Application {
 	private static final String TAG = "ImhApplication";
 	private Context context;
 	private ImhPowerReceiver imhPower;
+	Location location;
+	
+	public Location getLocation() {
+		return location;
+	}
+
+	public void setLocation(Location location) {
+		this.location = location;
+	}
 
 	@Override
 	public void onCreate() {
@@ -28,6 +39,7 @@ public class ImhApplication extends Application {
 	}
 
 	public void suspendLocationUpdates() {
+		if(imhPower!=null)
 		imhPower.suspendLocationUpdates();
 		Toast.makeText(context, "Suspended notification", Toast.LENGTH_SHORT)
 				.show();

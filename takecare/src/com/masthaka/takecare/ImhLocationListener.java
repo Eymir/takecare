@@ -34,7 +34,7 @@ public class ImhLocationListener implements LocationListener {
 	}
 
 	public void requestLocationUpdates() {
-		locationManager.requestLocationUpdates(provider, 100, 1,
+		locationManager.requestLocationUpdates(provider, 15000, 3,
 				this);
 		imhNotThread = new ImhNotifierThread(context, mainHandler,new SMSNotifierImpl());
 		imhNotThread.start();
@@ -68,7 +68,7 @@ public class ImhLocationListener implements LocationListener {
 		//Log.d(TAG, "@@@@@@@@@@@@@ Thread............. "+ imhNotThread);
 		//Log.d(TAG, "@@@@@@@@@@@@@ Handler............. "+ imhNotThread.getHandler());
 		//Log.d(TAG, "@@@@@@@@@@@@@ Thread............. "+ imhNotThread);
-		
+		((ImhApplication)context.getApplicationContext()).setLocation(location);
 		imhNotThread.getHandler().sendMessage(lmessage);		
 	}
 

@@ -13,7 +13,7 @@ public class FacebookNotifierImpl implements ImhINotifier{
 		Twitter twitter;
 		
 		@Override
-		public void execute(Context context,  Message msg) {
+		public void execute(Context context) {
 			Twitter.Status status = getTwitter().updateStatus(
 					new Random().nextInt() + "");
 		}

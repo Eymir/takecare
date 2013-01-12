@@ -21,13 +21,13 @@ public class ImhNotifierThread extends Thread {
 	
 	private Context context;
 	private boolean running = true;
-	private Message locationMessage;
+	//private Message locationMessage;
 	
     // local Handler manages messages for MyThread 
     // received from mainThread
 	private Handler thisThreadHandler = new Handler(){
 		public void handleMessage(Message msg) {
-			locationMessage = msg;
+			//locationMessage = msg;
 			interrupt();
 		}
 	};
@@ -38,7 +38,6 @@ public class ImhNotifierThread extends Thread {
 		this.parentHandler = parentHandler;
 		this.notifier = notifier;
 		this.context = context;
-
 	}
 
 	public void stopImhNotifierThread(){
@@ -65,7 +64,11 @@ public class ImhNotifierThread extends Thread {
 					
 					// Thread loop
 						// prepare a message with the updated text
-						notifier.execute(context, locationMessage);
+					
+					double lat = ((ImhApplication)context.getApplicationContext()).getLocation().getLatitude();
+					double lng = ((ImhApplication)context.getApplicationContext()).getLocation().getLongitude();
+					Log.d(TAG, "$$$$$$$$$$$$ In Thread= " + lat + " lng= " + lng);
+						notifier.execute(context);
 						messageData.putString("message", "Done Successful");
 						messageToParent.setData(messageData);
 				} 

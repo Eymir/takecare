@@ -61,6 +61,7 @@ public class ImhPowerReceiver extends BroadcastReceiver {
 	
 	public void suspendLocationUpdates() {
 		Log.d(TAG, " ########### What happened Location Listener "+lListener);
+		if(lListener!=null)
 		lListener.suspendLocationUpdates();
 	}	
 

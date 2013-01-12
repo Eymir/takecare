@@ -1,6 +1,6 @@
 package com.masthaka.takecare;
 
-import com.example.relative.R;
+
 
 import android.content.Context;
 import android.content.Intent;

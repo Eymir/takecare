@@ -3,7 +3,6 @@ package com.masthaka.takecare;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.relative.R;
 
 import android.app.Activity;
 import android.app.AlertDialog;

@@ -2,8 +2,8 @@ package com.masthaka.takecare.action;
 
 import java.util.Random;
 
-import com.example.relative.R;
 import com.masthaka.takecare.ImhApplication;
+import com.masthaka.takecare.R;
 
 import winterwell.jtwitter.Twitter;
 import android.content.Context;
@@ -20,7 +20,7 @@ public class TwitterNotifierImpl implements ImhINotifier{
 	Twitter twitter;
 	
 	@Override
-	public void execute(Context context,  Message msg) {
+	public void execute(Context context) {
 		Twitter.Status status =  getTwitter(context).updateStatus(
 				new Random().nextInt() + "");
 	}

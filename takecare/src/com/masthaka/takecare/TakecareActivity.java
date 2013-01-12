@@ -1,7 +1,5 @@
 package com.masthaka.takecare;
 
-import com.example.relative.R;
-
 import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationManager;
