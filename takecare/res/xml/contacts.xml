@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="App Settings" >
+        <Preference
+            android:key="@string/IMH_CONTACT1"
+            android:summary="@string/IMH_CONTACT1_SUMMARY"
+            android:title="@string/IMH_CONTACT1_TITLE" >
+        </Preference>
+        <Preference
+            android:key="@string/IMH_CONTACT2"
+            android:summary="@string/IMH_CONTACT2_SUMMARY"
+            android:title="@string/IMH_CONTACT2_TITLE" >
+        </Preference>
+        <Preference
+            android:key="@string/IMH_CONTACT3"
+            android:summary="@string/IMH_CONTACT3_SUMMARY"
+            android:title="@string/IMH_CONTACT3_TITLE" >
+        </Preference>
+        <Preference
+            android:key="@string/IMH_CONTACT4"
+            android:summary="@string/IMH_CONTACT4_SUMMARY"
+            android:title="@string/IMH_CONTACT4_TITLE" >
+        </Preference>
+        <Preference
+            android:key="@string/IMH_CONTACT5"
+            android:summary="@string/IMH_CONTACT1_SUMMARY"
+            android:title="@string/IMH_CONTACT1_TITLE" >
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

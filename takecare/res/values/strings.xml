@@ -13,21 +13,35 @@
     <string name="skey">skey</string>
     <string name="server">server</string>
     <string name="sdescription">Server address</string>
+
     <color name="orange">#FFA500</color>
-    
+
     <string name="kname">kname</string>
     <string name="name">Name</string>
     <string name="nsummary">Enter your nick name</string>
-    
     <string name="kphone">kphone</string>
     <string name="phone">Phone</string>
     <string name="psummary">Enter mobile number of this device</string>
-    
     <string name="kclick">name</string>
     <string name="click">Power Button Clicks</string>
     <string name="csummary">Pressing power button these many time will initiate tracking</string>
-    
     <string name="klocation">klocation</string>
     <string name="location">Enable Location</string>
     <string name="lsummary">You must enable either Mobile Network or GPS for tracking. GPS is always better!</string>
+    <string name="IMH_CONTACT1">IMH_CONTACT1</string>
+    <string name="IMH_CONTACT1_SUMMARY">IMH_CONTACT1_SUMMARY</string>
+    <string name="IMH_CONTACT1_TITLE">IMH_CONTACT1_TITLE</string>
+    <string name="IMH_CONTACT2">IMH_CONTACT2</string>
+    <string name="IMH_CONTACT2_SUMMARY">IMH_CONTACT2_SUMMARY</string>
+    <string name="IMH_CONTACT2_TITLE">IMH_CONTACT2_TITLE</string>
+    <string name="IMH_CONTACT3">IMH_CONTACT3</string>
+    <string name="IMH_CONTACT3_SUMMARY">IMH_CONTACT3_SUMMARY</string>
+    <string name="IMH_CONTACT3_TITLE">IMH_CONTACT3_TITLE</string>
+    <string name="IMH_CONTACT4">IMH_CONTACT4</string>
+    <string name="IMH_CONTACT4_SUMMARY">IMH_CONTACT4_SUMMARY</string>
+    <string name="IMH_CONTACT4_TITLE">IMH_CONTACT4_TITLE</string>
+    <string name="IMH_CONTACT5">IMH_CONTACT5</string>
+    <string name="IMH_CONTACT5_SUMMARY">IMH_CONTACT5_SUMMARY</string>
+    <string name="IMH_CONTACT5_TITLE">IMH_CONTACT5_TITLE</string>
+
 </resources>
