@@ -2,17 +2,13 @@ package com.masthaka.takecare.action;
 
 import java.util.Random;
 
-import com.masthaka.takecare.ImhApplication;
-import com.masthaka.takecare.R;
-
 import winterwell.jtwitter.Twitter;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.AsyncTask;
-import android.os.Message;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
-import android.util.Log;
+
+import com.masthaka.takecare.R;
 
 public class TwitterNotifierImpl implements ImhINotifier{	
 

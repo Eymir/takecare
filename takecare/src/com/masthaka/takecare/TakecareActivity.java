@@ -16,8 +16,6 @@ import android.support.v4.app.TaskStackBuilder;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.RemoteViews;
-import android.widget.TextView;
 import android.widget.ToggleButton;
 
 public class TakecareActivity extends Activity implements OnClickListener {
@@ -83,7 +81,8 @@ public class TakecareActivity extends Activity implements OnClickListener {
 
 		switch (view.getId()) {
 		case R.id.contacts:
-			startActivity(new Intent(this, ContactActivity.class));
+			//startActivity(new Intent(this, ContactActivity.class));
+			startActivity(new Intent(this, ImhContactPrefActivity.class));
 			break;
 		case R.id.setting:
 			startActivity(new Intent(this, ImhPrefActivity.class));
@@ -95,7 +94,6 @@ public class TakecareActivity extends Activity implements OnClickListener {
 			// startActivity(new Intent(this, InfoActivity.class));
 			break;
 		case R.id.onoff:
-			Button tbutton = (ToggleButton) view;
 			boolean on = ((ToggleButton) view).isChecked();
 
 			if (on) {

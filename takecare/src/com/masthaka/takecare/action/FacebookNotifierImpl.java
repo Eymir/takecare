@@ -2,10 +2,8 @@ package com.masthaka.takecare.action;
 
 import java.util.Random;
 
-import android.content.Context;
-import android.os.Message;
-
 import winterwell.jtwitter.Twitter;
+import android.content.Context;
 
 public class FacebookNotifierImpl implements ImhINotifier{	
 		private static final String TAG = "FacebookNotifierImpl";
