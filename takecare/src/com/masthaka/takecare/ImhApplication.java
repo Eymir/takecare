@@ -40,9 +40,9 @@ public class ImhApplication extends Application {
 	public void suspendLocationUpdates() {
 		if (imhPower != null)
 			imhPower.suspendLocationUpdates();
-		Toast.makeText(context, "Suspended notification", Toast.LENGTH_SHORT)
+		Toast.makeText(context, "App is turned off", Toast.LENGTH_SHORT)
 				.show();
-		Log.i(TAG, "Suspended notification");
+		Log.i(TAG, "App is turned off");
 	}
 
 	@Override

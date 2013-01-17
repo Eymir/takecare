@@ -88,10 +88,10 @@ public class TakecareActivity extends Activity implements OnClickListener {
 			startActivity(new Intent(this, ImhPrefActivity.class));
 			break;
 		case R.id.help:
-			// startActivity(new Intent(this, HelpActivity.class));
+			startActivity(new Intent(this, ImhHelpActivity.class));
 			break;
 		case R.id.info:
-			// startActivity(new Intent(this, InfoActivity.class));
+			startActivity(new Intent(this, ImhInfoActivity.class));
 			break;
 		case R.id.onoff:
 			boolean on = ((ToggleButton) view).isChecked();
@@ -144,7 +144,7 @@ public class TakecareActivity extends Activity implements OnClickListener {
 		NotificationManager mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 		// mId allows you to update the notification later on.
 		Notification notification = mBuilder.build();
-		notification.tickerText = "Take Care App notification initiated";
+		notification.tickerText = "Take Care App is initiated";
 		mNotificationManager.notify(2013, notification);
 	}
 
