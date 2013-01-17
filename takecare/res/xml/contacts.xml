@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <PreferenceCategory android:title="App Settings" >
+    <PreferenceCategory android:title="Contact Settings" >
         <Preference
             android:key="@string/IMH_CONTACT1"
             android:summary="@string/IMH_CONTACT1_SUMMARY"

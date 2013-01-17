@@ -55,8 +55,8 @@
             android:background="@drawable/onoff"
             android:text="ToggleButton"
             android:textColor="@android:color/white"
-            android:textOff="Tap to initiate tracking."
-            android:textOn="Tracking on! Press power button 3 times to initiate notification any time." />
+            android:textOff="Tap to initiate app."
+            android:textOn="App is initiated! Tap to turn off. During emergencies, press power button few times until phone vibrates to trigger emergency notifications!" />
 
     </RelativeLayout>
 
